@@ -38,7 +38,7 @@ function Contact() {
                     </Button>
                   </Link>
                 </div>
-                {data.length !== 0 ? <div className="flex flex-wrap items-start mt-5 h-full">
+                {data.length !== 0 ? <div className="flex flex-wrap items-start justify-center mt-5 h-full w-full">
                   <div className="grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-2 md:grid-cols-3 md:gap-3 lg:grid-cols-4 lg:gap-4">
                     {data.map((item:any) => (
                       <Card key={item._id} data={item} />

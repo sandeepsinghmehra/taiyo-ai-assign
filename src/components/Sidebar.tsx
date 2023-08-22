@@ -26,15 +26,15 @@ function Sidebar({ className, ...props }:any) {
                 Contacts
             </NavLink>
             <NavLink
-                to={'/maps'}
+                to={'/dashboard'}
                 className={cn(
                     buttonVariants({ variant: "ghost" }),
-                    location.pathname === "/maps" ?  "bg-muted-foreground text-white" :"hover:bg-transparent hover:underline",
+                    location.pathname === "/dashboard" ?  "bg-muted-foreground text-white" :"hover:bg-transparent hover:underline",
                     "justify-start rounded-none"
                     )
                 }
             >
-                Charts and Maps
+                Dashboard
             </NavLink>
         </nav>
     );

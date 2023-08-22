@@ -28,9 +28,6 @@ export const Card: React.FC<CardProps> = ({
         try {
           setLoading(true); 
           await deleteContactMutation.mutateAsync(contactId, {
-            // onMutate: () => {
-            //   // Perform any actions before the mutation
-            // },
             onSuccess: () => {
               // Invalidate the cached data to trigger a re-fetch
               queryClient.invalidateQueries('contacts');
