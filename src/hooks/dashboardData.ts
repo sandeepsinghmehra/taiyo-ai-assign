@@ -13,18 +13,15 @@ export function useGraphData() {
 
 const fetchWorldData = async () => {
     const response = await axios.get('https://disease.sh/v3/covid-19/all');
-    // console.log("worldData", response);
     return response.data;
   };
 
   const fetchCountryData = async () => {
     const response = await axios.get('https://disease.sh/v3/covid-19/countries');
-    // console.log("countryData", response);
     return response.data;
   };
 
   const fetchGraphData = async () => {
     const response = await axios.get('https://disease.sh/v3/covid-19/historical/all?lastdays=all');
-    // console.log("graphData", response);
     return response.data;
   };

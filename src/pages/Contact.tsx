@@ -1,10 +1,8 @@
-import { useQuery } from 'react-query';
 import { XCircle } from "lucide-react";
 import Sidebar from "../components/Sidebar";
 import { Link } from "react-router-dom";
 import { Alert, AlertDescription, AlertTitle } from "../components/ui/alert";
 import { Button } from "../components/ui/button";
-import axios from 'axios';
 import { useContacts } from '../hooks/contactsData';
 import { Card } from '../components/card';
 

@@ -65,7 +65,7 @@ const Dashboard = () => {
   return (
     <div className="w-full">
         <header className='bg-blue-800 h-16 text-center py-5 font-mono font-bold text-white text-2xl'>
-          Dashboard Page with Maps and Charts
+          Dashboard Page
         </header>
 
         <div className="flex flex-col lg:flex-row h-full">

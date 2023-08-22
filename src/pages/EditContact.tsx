@@ -15,7 +15,6 @@ function EditContact() {
   if (error) {
     return <p>Error: {error.toString()}</p>;
   }
-  console.log("Edit data", data);
     return (
       <>
         <header className='bg-blue-800 text-center py-3 font-mono font-bold text-white text-2xl h-full'>

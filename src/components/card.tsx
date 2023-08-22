@@ -1,8 +1,7 @@
-import { MouseEventHandler } from "react";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useMutation } from 'react-query';
 import { queryClient } from "../App";
