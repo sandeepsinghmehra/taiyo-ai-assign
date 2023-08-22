@@ -81,13 +81,13 @@ const ContactForm: React.FC<any> = ({
                 
             <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8 w-full my-5">
-                    <div className="w-[500px] mx-auto border border-green-500 grid gap-8 py-5 px-3 rounded-md">
+                    <div className="md:w-[500px] mx-auto border border-green-500 grid gap-8 py-5 px-3 rounded-md">
                         <FormField 
                             control={form.control}
                             name="first_name"
                             render={({field})=>(
-                                <FormItem className="flex flex-row">
-                                    <FormLabel className="w-40 m-auto">First Name</FormLabel>
+                                <FormItem className="flex flex-col md:flex-row">
+                                    <FormLabel className="w-40 md:m-auto">First Name</FormLabel>
                                     <div className="flex-col w-80">
                                         <FormControl className="w-80">
                                             <Input disabled={loading} placeholder="first name" {...field} />
@@ -101,8 +101,8 @@ const ContactForm: React.FC<any> = ({
                             control={form.control}
                             name="last_name"
                             render={({field})=>(
-                                <FormItem className="flex flex-row">
-                                    <FormLabel className="w-40 m-auto">Last Name</FormLabel>
+                                <FormItem className="flex flex-col md:flex-row">
+                                    <FormLabel className="w-40 md:m-auto">Last Name</FormLabel>
                                     <div className="flex-col w-80">
                                         <FormControl>
                                             <Input disabled={loading} placeholder="last name" {...field} />
@@ -117,9 +117,9 @@ const ContactForm: React.FC<any> = ({
                             control={form.control}
                             name="status"
                             render={({field})=>(
-                                <FormItem className="flex flex-row">
-                                    <FormLabel className="w-40 m-auto">Status</FormLabel>
-                                    <div className="flex-col w-80">
+                                <FormItem className="flex flex-col md:flex-row">
+                                    <FormLabel className="w-40 md:m-auto">Status</FormLabel>
+                                    <div className="flex-row md:flex-col w-80">
                                         <RadioGroup 
                                             disabled={loading} 
                                             onValueChange={field.onChange} 
